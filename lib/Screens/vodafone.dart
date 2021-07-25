@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class Vodafone extends StatefulWidget {
   const Vodafone({Key? key}) : super(key: key);
@@ -14,10 +15,23 @@ class _VodafoneState extends State<Vodafone> {
       appBar: AppBar(
         title: Text('Vodafone'),
         centerTitle: true,
-        backgroundColor: Colors.red[600],
+        backgroundColor: Color(0xffe60000),
       ),
       body: Center(
-        child: Text('Vodafone Page'),
+        child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(
+                horizontal: 20,
+                vertical: 12,
+              ),
+              textStyle: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            onPressed: () async {
+              await FlutterPhoneDirectCaller.callNumber('0571923030');
+            },
+            child: Text('call')),
       ),
     );
   }

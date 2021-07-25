@@ -14,7 +14,7 @@ class _MtnState extends State<Mtn> {
       appBar: AppBar(
         title: Text('MTN'),
         centerTitle: true,
-        backgroundColor: Colors.yellow[600],
+        backgroundColor: Color(0xffffcc00),
       ),
       body: Center(
         child: Text('Mtn Page'),

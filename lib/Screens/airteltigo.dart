@@ -17,11 +17,11 @@ class _AirtelTigoState extends State<AirtelTigo> {
           children: [
             Text(
               'Airtel',
-              style: TextStyle(color: Colors.red[600]),
+              style: TextStyle(color: Color(0xffed192b)),
             ),
             Text(
               'Tigo',
-              style: TextStyle(color: Colors.blue[800]),
+              style: TextStyle(color: Color(0xff01377a)),
             )
           ],
         ),

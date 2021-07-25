@@ -40,27 +40,40 @@ class _MyAppState extends State<MyApp> {
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
         currentIndex: selectedPage,
         onTap: (index) {
           setState(() {
             selectedPage = index;
           });
         },
-        items: const <BottomNavigationBarItem>[
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.call),
+            icon: CircleAvatar(
+              radius: 13,
+              backgroundImage: AssetImage('assets/voda1.png'),
+            ),
             label: 'Calls',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.camera),
+            icon: CircleAvatar(
+              radius: 13,
+              backgroundImage: AssetImage('assets/mtn1.png'),
+            ),
             label: 'Camera',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.chat),
+            icon: CircleAvatar(
+              radius: 13,
+              backgroundImage: AssetImage('assets/tigo.png'),
+            ),
             label: 'Chats',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: CircleAvatar(
+              radius: 13,
+              backgroundImage: AssetImage('assets/glo1.png'),
+            ),
             label: 'Settings',
           ),
         ],

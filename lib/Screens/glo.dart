@@ -14,7 +14,7 @@ class _GloState extends State<Glo> {
       appBar: AppBar(
         title: Text('Glo'),
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xff129c09),
       ),
       body: Center(
         child: Text('Glo Page'),
